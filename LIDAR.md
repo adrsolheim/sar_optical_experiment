@@ -2,7 +2,7 @@
 
 Points within this "tree cell" show varying heights from ground height up to 11m above ground. Most cells show close to ground height
 
-<img src="images/TREE.PNG" alt="tree" width="200"/>
+<img src="images/TREE.PNG" alt="tree" width="400"/>
 
 This pixel show height value equal to **ground elevation**.
 
@@ -25,4 +25,4 @@ This pixel show tree height is **11m**
 
 Google Street View of scene
 
-![Tree scene](images/tree_scene.PNG)
+<img src="images/tree_scene.PNG" alt="Tree scene" width="400"/>
