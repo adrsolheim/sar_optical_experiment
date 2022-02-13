@@ -30,9 +30,9 @@ Google Street View of scene
 
 # LiDAR Points In A Single Pixel
 
-Some of these points seem to 
-- reflect ground
+Some of these points seem to reflect above sea level values from  
+- ground
 - mid-canopy 
 - **top of canopy**  
 
-![Las points in a single image cell](images/single_pixel_with_las.PNG)
+![Las points in a single image cell](images/single_pixel_with_las2.PNG)
