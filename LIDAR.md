@@ -26,3 +26,8 @@ This pixel show tree height is **11m**
 Google Street View of scene
 
 <img src="images/tree_scene.PNG" alt="Tree scene" width="400"/>
+
+
+# LiDAR Points In A Single Pixel
+
+![Las points in a single image cell](images/single_pixel_with_las.PNG)
