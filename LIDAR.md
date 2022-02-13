@@ -35,4 +35,4 @@ Some of these points seem to reflect above sea level values from
 - mid-canopy 
 - **top of canopy**  
 
-![Las points in a single image cell](images/single_pixel_with_las2.PNG)
+![Las points in a single image cell](images/single_pixel_with_las2.png)
