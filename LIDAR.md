@@ -30,7 +30,7 @@ Google Street View of scene
 
 # LiDAR Points In A Single Pixel
 
-Some of these points seem to reflect above sea level values from  
+LiDAR points in a single pixel seem to range anywhere from 10 to more than 50 points. Some of these points seem to reflect above sea level values from  
 - ground
 - mid-canopy 
 - **top of canopy**  
