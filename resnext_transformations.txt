@@ -1,0 +1,53 @@
+
+output of bottleneck layer is always (planes * self.expansion)
+
+## Layer 1
+
+Bottleneck1(inplanes=64, planes=64, stride=1, downsample, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	-> Downsample(conv1x1(inplanes=64, outplanes=256, stride=1))
+	IN: 64, OUT: 256
+Bottleneck2(inplanes=256, planes=64, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 256, OUT: 256
+	
+## Layer 2
+
+Bottleneck1(inplanes=256, planes=128, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	-> Downsample(conv1x1(inplanes=256, outplanes=512, stride=1))
+	IN: 256, OUT: 512
+Bottleneck2(inplanes=512, planes=128, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 512, OUT: 512
+Bottleneck3(inplanes=512, planes=128, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 512, OUT: 512
+	
+## Layer 3
+
+Bottleneck1(inplanes=512, planes=256, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	-> Downsample(conv1x1(inplanes=512, outplanes=1024, stride=1))
+	IN: 512, OUT: 1024
+Bottleneck2(inplanes=1024, planes=256, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 1024, OUT: 1024
+Bottleneck3(inplanes=1024, planes=256, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 1024, OUT: 1024
+Bottleneck4(inplanes=1024, planes=256, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 1024, OUT: 1024
+Bottleneck5(inplanes=1024, planes=256, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 1024, OUT: 1024
+	
+## Layer 4
+
+Bottleneck1(inplanes=1024, planes=512, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	-> Downsample(conv1x1(inplanes=1024, outplanes=2048, stride=1))
+	IN: 1024, OUT: 2048
+Bottleneck2(inplanes=2048, planes=512, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 2048, OUT: 2048
+Bottleneck3(inplanes=2048, planes=512, stride=1, self.groups=32, self.base_width=4, dilation=1, norm_layer)
+	(No Downsample)
+	IN: 2048, OUT: 2048
